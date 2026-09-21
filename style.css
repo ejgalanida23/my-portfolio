@@ -1,0 +1,119 @@
+/* ---------- Basic reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------- Intro Section ---------- */
+.intro-section {
+  max-width: 600px;
+  margin: 0 auto;      /* centers the section horizontally */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;   /* makes it a circle */
+  object-fit: cover;    /* keeps the photo from stretching */
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* ---------- Button ---------- */
+.btn {
+  display: inline-block;      /* lets us apply padding/width like a box */
+  background-color: #2d6cdf;
+  color: #fff;
+  text-decoration: none;      /* removes the default underline */
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1e4fa3;
+}
+
+/* ---------- About Me / Story Section ---------- */
+.story-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-top: 2px solid #eee;
+}
+
+.story-section h2 {
+  margin-bottom: 15px;
+}
+
+.story-section h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.story-section ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.story-section p,
+.story-section li {
+  padding: 4px 0;
+}
+
+/* ---------- Skills Section ---------- */
+.skills-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-top: 2px solid #eee;
+  text-align: center;
+}
+
+.skills-section h2 {
+  margin-bottom: 25px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card h3 {
+  margin-bottom: 8px;
+}

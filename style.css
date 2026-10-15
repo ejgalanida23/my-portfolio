@@ -111,7 +111,7 @@ body {
 
 /* ---------- Projects Section ---------- */
 .projects-section {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 40px 20px;
   border-top: 2px solid #eee;
@@ -124,22 +124,20 @@ body {
 
 /* Flexbox container: puts the cards in a row and wraps them when space runs out */
 .projects-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* fit cards in a row, equally stretch to fill space, but never shrink smaller.*/
   gap: 20px;
   justify-content: center;
 }
 
 /* One reusable style for every project */
 .project-card {
-  flex: 1 1 280px;
-  max-width: 320px;
   display: flex;
   flex-direction: column;
   background-color: #f9f9f9;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
-  padding: 15px;
+  padding: 20px;
   text-align: left;
 }
 
@@ -185,4 +183,58 @@ body {
   text-decoration: none;
   padding: 8px 18px;
   border-radius: 6px;
+}
+
+
+/* Education and Experience Section */
+.experience-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-top: 2px solid #eee;
+  text-align: center;
+}
+
+.experience-section{
+  margin-bottom: 25px;
+}
+
+.experience-table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.experience-table caption {
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+.experience-table th,
+.experience-table td {
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+/* Header styling */
+.experience-table th {
+  background-color: #2d6cdf;
+  color: #fff;
+}
+
+/* Keep the year on one line */
+.experience-table td:first-child {
+  white-space: nowrap;
+}
+
+/* Alternate row colors and a hover highlight */
+.experience-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.experience-table tbody tr:hover {
+  background-color: #e8f0fe;
 }

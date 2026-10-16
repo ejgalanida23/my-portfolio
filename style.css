@@ -77,7 +77,7 @@ body {
   padding: 4px 0;
 }
 
-/* ---------- Skills Section ---------- */
+/* ---------- Activity 3: Skills Section ---------- */
 .skills-section {
   max-width: 800px;
   margin: 0 auto;
@@ -109,7 +109,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* ---------- Projects Section ---------- */
+/* ---------- Activty 4: Projects Section ---------- */
 .projects-section {
   max-width: 1100px;
   margin: 0 auto;
@@ -186,7 +186,7 @@ body {
 }
 
 
-/* Education and Experience Section */
+/* Activity 5: Education and Experience Section */
 .experience-section {
   max-width: 1000px;
   margin: 0 auto;
@@ -239,8 +239,7 @@ body {
   background-color: #e8f0fe;
 }
 
-/* Activity 6 Navigation Section */
-/* ---------- Navigation ---------- */
+/* Activity 6: Navigation Section */
 html {
   scroll-behavior: smooth;      /* smooth scrolling when a menu link is clicked */
   scroll-padding-top: 80px;     /* keeps headings from hiding under the sticky menu */

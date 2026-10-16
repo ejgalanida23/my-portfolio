@@ -238,3 +238,42 @@ body {
 .experience-table tbody tr:hover {
   background-color: #e8f0fe;
 }
+
+/* Activity 6 Navigation Section */
+/* ---------- Navigation ---------- */
+html {
+  scroll-behavior: smooth;      /* smooth scrolling when a menu link is clicked */
+  scroll-padding-top: 80px;     /* keeps headings from hiding under the sticky menu */
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  border-bottom: 2px solid #eee;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+}
+
+.nav-links a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: #2d6cdf;
+  color: #fff;
+}

@@ -188,7 +188,7 @@ body {
 
 /* Activity 5: Education and Experience Section */
 .experience-section {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 40px 20px;
   border-top: 2px solid #eee;
@@ -201,7 +201,7 @@ body {
 
 .experience-table {
   width: 100%;
-  min-width: 800px;
+  min-width: 700px;
   border-collapse: collapse;
   text-align: left;
 }
@@ -275,4 +275,73 @@ html {
 .nav-links a:hover {
   background-color: #2d6cdf;
   color: #fff;
+}
+
+/* Activity 7: Contact */
+/* ---------- Contact Section ---------- */
+.contact-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-top: 2px solid #eee;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Focus effect: shows which field you are typing in */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2d6cdf;
+  box-shadow: 0 0 0 3px rgba(45, 108, 223, 0.2);
+}
+
+.send-btn {
+  align-self: flex-start;
+  background-color: #2d6cdf;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.send-btn:hover {
+  background-color: #1e4fa3;
+  transform: translateY(-2px);
 }

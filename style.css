@@ -345,3 +345,77 @@ html {
   background-color: #1e4fa3;
   transform: translateY(-2px);
 }
+
+/* ---------- Activity 8: Work on phones ---------- */
+
+/* Images never grow wider than their container */
+img {
+  max-width: 100%;
+}
+
+/* Tablet: screens 768px wide or smaller */
+@media (max-width: 768px) {
+  .intro-section {
+    padding: 40px 20px;
+  }
+
+  /* Hobbies and Goals stack into one column */
+  .HG-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile: screens 480px wide or smaller */
+@media (max-width: 480px) {
+  /* Menu is taller on phones, so jump targets need more room */
+  html {
+    scroll-padding-top: 110px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .intro-section {
+    padding: 30px 15px;
+  }
+
+  .story-section,
+  .skills-section,
+  .projects-section,
+  .experience-section,
+  .contact-section {
+    padding: 30px 15px;
+  }
+
+  /* Smaller menu links so the sticky bar doesn't take over the screen */
+  .nav-links {
+    gap: 4px;
+    padding: 8px 10px;
+  }
+
+  .nav-links a {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  /* Tighter table cells */
+  .experience-table th,
+  .experience-table td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Full-width Send button */
+  .send-btn {
+    align-self: stretch;
+  }
+}
